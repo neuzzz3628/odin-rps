@@ -17,3 +17,16 @@ function getComputerChoice(){
     let randomChoiceNum = Math.floor(Math.random()*3) + 1;
     return (randomChoiceNum === 1) ? "Rock" : (randomChoiceNum === 2) ? "Paper" : "Scissors"
 }
+
+function getHumanChoice(){
+    return prompt("Rock, Paper, Scissors? ")
+}
+
+
+//TESTING ZONE
+//This for loop tests out 10 random generation of the function getComputerChoice(), should be used ONLY for test, otherwise hidden.
+// for (let i = 1; i < 11; i ++){
+//     console.log(i +". " + getComputerChoice());
+// }
+
+console.log(getHumanChoice())
